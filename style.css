@@ -1,0 +1,68 @@
+/* Fonts */
+@import url('https://fonts.cdnfonts.com/css/home-video');
+@import url('https://fonts.cdnfonts.com/css/better-vcr');
+
+/* Color Palette */
+:root {
+  --text_main: rgb(255, 0, 135);
+  --text_header: rgb(255, 0, 225);
+  --text_header_inv: rgb(13, 0, 92);
+  --text_link: rgb(255, 0, 0);
+  --heading: rgb(181, 0, 69);
+  --border: rgb(13, 0, 92);
+}
+
+h1,h2,h3 {
+  color: var(--text_header);
+}
+
+h4 {
+  color: var(--text_header_inv);
+}
+
+h1,h2,h3,h4 {
+  font-family: 'Home Video', sans-serif;
+  /*font-family: 'Better VCR', sans-serif;*/
+  font-weight: 400;
+  font-size: 16px;
+}
+
+p {
+  color: var(--text_main);
+}
+
+a {
+  color: var(--text_link);
+  font-weight: 700;
+}
+
+main {
+  margin-top: 7px;
+  background-color: rgba(0, 0, 0, 0.7);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border: var(--border) solid 2px;
+}
+
+.top {
+  background: url("https://i.postimg.cc/76m3DdWn/paranoia.png")!important;
+}
+
+.links,.heading {
+  background: url("https://i.postimg.cc/kGChB0J6/textbox-bg.png") !important;
+  background-size: auto 100% !important;
+}
+
+* { 
+    cursor: url('https://amethyst-caron-34.tiiny.site/hand_open_edit.cur'), auto; 
+}
+a:hover {
+    cursor: url("https://amethyst-caron-34.tiiny.site/hand_closed_edit.cur"), auto;
+}
+
+body {
+  background-image: url("https://amethyst-caron-34.tiiny.site/spacehey_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  image-rendering: pixelated;
+}
