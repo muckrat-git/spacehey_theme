@@ -1,6 +1,56 @@
+
+
 /* Fonts */
 @import url('https://fonts.cdnfonts.com/css/home-video');
-@import url('https://fonts.cdnfonts.com/css/better-vcr');
+@import url('https://fonts.googleapis.com/css2?family=Coral+Pixels&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.contact .inner .f-row:nth-child(1) .f-col:nth-child(1) a img {
+  content: url("https://raw.githubusercontent.com/muckrat-git/spacehey_theme/refs/heads/main/spacehey_icons/add.png");
+}
+.contact .inner .f-row:nth-child(1) .f-col:nth-child(2) a img {
+  content: url("https://raw.githubusercontent.com/muckrat-git/spacehey_theme/refs/heads/main/spacehey_icons/award_star_add.png");
+}
+.contact .inner .f-row:nth-child(2) .f-col:nth-child(1) a img {
+  content: url("https://raw.githubusercontent.com/muckrat-git/spacehey_theme/refs/heads/main/spacehey_icons/comment.png");
+}
+.contact .inner .f-row:nth-child(2) .f-col:nth-child(2) a img {
+  content: url("https://raw.githubusercontent.com/muckrat-git/spacehey_theme/refs/heads/main/spacehey_icons/arrow_right.png");
+}
+.contact .inner .f-row:nth-child(3) .f-col:nth-child(1) a img {
+  content: url("https://raw.githubusercontent.com/muckrat-git/spacehey_theme/refs/heads/main/spacehey_icons/email.png");
+}
+.contact .inner .f-row:nth-child(3) .f-col:nth-child(2) a img {
+  content: url("https://raw.githubusercontent.com/muckrat-git/spacehey_theme/refs/heads/main/spacehey_icons/exclamation.png");
+}
+.contact .inner .f-row:nth-child(4) .f-col:nth-child(1) a img {
+  content: url("https://raw.githubusercontent.com/muckrat-git/spacehey_theme/refs/heads/main/spacehey_icons/group_add.png");
+}
+.contact .inner .f-row:nth-child(4) .f-col:nth-child(2) a img {
+  content: url("https://raw.githubusercontent.com/muckrat-git/spacehey_theme/refs/heads/main/spacehey_icons/flag_red.png");
+}
+
+/* Default font */
+p, span, div {
+  /*font-family: "Pixelify Sans", sans-serif;*/
+  font-family: "Fira Sans", sans-serif;
+}
+
+.online img {
+  content: url("https://i.postimg.cc/XJRd3PSr/online.gif");
+  image-rendering: pixelated;
+  width: 10px;
+  height: 20px;
+  animation-duration: 2.4s;
+  animation-timing-function: linear;
+}
+
+.online {
+  color: var(--text_header);
+  font-family: 'Home Video', sans-serif !important;
+  font-weight: 400;
+}
 
 /* Color Palette */
 :root {
@@ -10,7 +60,17 @@
   --text_link: rgb(255, 0, 0);
   --heading: rgb(181, 0, 69);
   --border: rgb(13, 0, 92);
+  --border2: rgba(138, 0, 92, 0.2);
 }
+
+.links a {
+  color: var(--text_header) !important;
+}
+.links a:hover {
+  color: var(--text_main) !important;
+}
+
+.link
 
 h1,h2,h3 {
   color: var(--text_header);
@@ -18,13 +78,12 @@ h1,h2,h3 {
 
 h4 {
   color: var(--text_header_inv);
+  font-size: 1.3em;
 }
 
 h1,h2,h3,h4 {
-  font-family: 'Home Video', sans-serif;
-  /*font-family: 'Better VCR', sans-serif;*/
+  font-family: 'Home Video', sans-serif !important;
   font-weight: 400;
-  font-size: 16px;
 }
 
 p {
@@ -34,6 +93,11 @@ p {
 a {
   color: var(--text_link);
   font-weight: 700;
+  text-rendering: geometricPrecision;
+}
+
+mash {
+  font-family: "Coral Pixels", serif;
 }
 
 main {
@@ -44,8 +108,17 @@ main {
   border: var(--border) solid 2px;
 }
 
+.blog-preview h4 {
+  color: var(--text_main);
+  text-decoration: var(--text_main) underline;
+}
+
+.container nav:has(.top) {
+  background: url("https://i.postimg.cc/76m3DdWn/paranoia.png") !important;
+}
+
 .top {
-  background: url("https://i.postimg.cc/76m3DdWn/paranoia.png")!important;
+  background: transparent !important;
 }
 
 .links,.heading {
@@ -54,10 +127,10 @@ main {
 }
 
 * { 
-    cursor: url('https://amethyst-caron-34.tiiny.site/hand_open_edit.cur'), auto; 
+    cursor: url('https://github.com/muckrat-git/spacehey_theme/raw/refs/heads/main/hand_open_edit.cur')  4 4, auto; 
 }
 a:hover {
-    cursor: url("https://amethyst-caron-34.tiiny.site/hand_closed_edit.cur"), auto;
+    cursor: url("https://github.com/muckrat-git/spacehey_theme/raw/refs/heads/main/hand_closed_edit.cur") 4 4, auto;
 }
 
 body {
@@ -65,4 +138,9 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   image-rendering: pixelated;
+}
+
+/* Sections */
+.contact, .url-info, .table-section, .comments-table {
+  border: 2px solid var(--border2) !important;
 }
