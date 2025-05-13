@@ -1,0 +1,309 @@
+<style>
+/* Fonts */
+@import url('https://fonts.cdnfonts.com/css/home-video');
+@import url('https://fonts.googleapis.com/css2?family=Coral+Pixels&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Override spacehey icons */
+.contact .inner .f-row:nth-child(1) .f-col:nth-child(1) a img {
+  content: url("https://raw.githubusercontent.com/muckrat-git/spacehey_theme/refs/heads/main/spacehey_icons/add.png");
+}
+.contact .inner .f-row:nth-child(1) .f-col:nth-child(2) a img {
+  content: url("https://raw.githubusercontent.com/muckrat-git/spacehey_theme/refs/heads/main/spacehey_icons/award_star_add.png");
+}
+.contact .inner .f-row:nth-child(2) .f-col:nth-child(1) a img {
+  content: url("https://raw.githubusercontent.com/muckrat-git/spacehey_theme/refs/heads/main/spacehey_icons/comment.png");
+}
+.contact .inner .f-row:nth-child(2) .f-col:nth-child(2) a img {
+  content: url("https://raw.githubusercontent.com/muckrat-git/spacehey_theme/refs/heads/main/spacehey_icons/arrow_right.png");
+}
+.contact .inner .f-row:nth-child(3) .f-col:nth-child(1) a img {
+  content: url("https://raw.githubusercontent.com/muckrat-git/spacehey_theme/refs/heads/main/spacehey_icons/email.png");
+}
+.contact .inner .f-row:nth-child(3) .f-col:nth-child(2) a img {
+  content: url("https://raw.githubusercontent.com/muckrat-git/spacehey_theme/refs/heads/main/spacehey_icons/exclamation.png");
+}
+.contact .inner .f-row:nth-child(4) .f-col:nth-child(1) a img {
+  content: url("https://raw.githubusercontent.com/muckrat-git/spacehey_theme/refs/heads/main/spacehey_icons/group_add.png");
+}
+.contact .inner .f-row:nth-child(4) .f-col:nth-child(2) a img {
+  content: url("https://raw.githubusercontent.com/muckrat-git/spacehey_theme/refs/heads/main/spacehey_icons/flag_red.png");
+}
+
+.person a:has(.pfp-fallback) {
+  background: url("https://raw.githubusercontent.com/muckrat-git/spacehey_theme/refs/heads/main/dither.png");
+  display:block;
+  width: 95px;
+  height: 95px;
+}
+
+.details-table tr {
+  background: url("https://raw.githubusercontent.com/muckrat-git/spacehey_theme/refs/heads/main/dither.png");
+}
+
+.details-table td:first-child p {
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.person a .verified {
+  content: url("https://raw.githubusercontent.com/muckrat-git/spacehey_theme/refs/heads/main/tick.png");
+  width: 12px;
+  height: 12px;
+}
+
+.person a .pfp-fallback {
+  opacity: 1;
+  filter: saturate(0);
+  mix-blend-mode: multiply;
+}
+
+.profile .friends .person p {
+  color: var(--text_link);
+}
+
+/* Default font */
+p, span, div {
+  /*font-family: "Pixelify Sans", sans-serif;*/
+  font-family: "Fira Sans", sans-serif;
+}
+
+.details-table td:first-child {
+  background: url("https://i.pinimg.com/originals/4b/5d/a6/4b5da63844b3760bb5dcc9ef2e6fa402.gif") !important;
+  mix-blend-mode: multiply;
+}
+
+.details-table td:last-child {
+  background: rgba(0, 0, 0, 0.9);
+  border: rgba(255, 0, 225, 0.2) solid 2px;
+  mix-blend-mode: multiply;
+}
+
+.details-table td:last-child p {
+  font-family: verdana, arial, sans-serif, helvetica;
+  font-weight: 600;
+}
+
+.online img {
+  content: url("https://i.postimg.cc/XJRd3PSr/online.gif");
+  image-rendering: pixelated;
+  width: 10px;
+  height: 20px;
+  animation-duration: 2.4s;
+  animation-timing-function: linear;
+}
+
+.online {
+  color: var(--text_header);
+  font-family: 'Home Video', sans-serif !important;
+  font-weight: 400;
+}
+
+/* Color Palette */
+:root {
+  --text_main: rgb(255, 0, 135);
+  --text_header: rgb(255, 0, 225);
+  --text_header_inv: rgb(13, 0, 92);
+  --text_link: rgb(255, 0, 0);
+  --heading: rgb(181, 0, 69);
+  --border: rgb(13, 0, 92);
+  --border2: rgba(138, 0, 92, 0.2);
+}
+
+span {
+  color: var(--text_link) !important;
+}
+
+.links a {
+  color: var(--text_header) !important;
+}
+.links a:hover {
+  color: var(--text_main) !important;
+}
+
+h1,h2,h3 {
+  color: var(--text_header);
+}
+
+h4 {
+  color: var(--text_header_inv);
+  font-size: 1.3em;
+}
+
+h1,h2,h3,h4 {
+  font-family: 'Home Video', sans-serif !important;
+  font-weight: 400;
+}
+
+p {
+  color: var(--text_main);
+}
+
+a {
+  color: var(--text_link);
+  font-weight: 700;
+  text-rendering: geometricPrecision;
+}
+
+.mash {
+  font-family: "Coral Pixels", serif;
+}
+
+main, footer {
+  margin-top: 7px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: var(--border) solid 2px;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+
+.blog-preview h4 {
+  color: var(--text_main);
+  text-decoration: var(--text_main) underline;
+}
+
+.container nav:has(.top) {
+  background: url("https://i.postimg.cc/76m3DdWn/paranoia.png") !important;
+}
+
+.top {
+  background: transparent !important;
+}
+
+.links,.heading {
+  background: url("https://i.postimg.cc/kGChB0J6/textbox-bg.png") !important;
+  background-size: auto 100% !important;
+}
+
+* { 
+    cursor: url('https://github.com/muckrat-git/spacehey_theme/raw/refs/heads/main/hand_open_edit.cur')  20 20, auto; 
+}
+a:hover, a *:hover, button:hover, summary *:hover {
+    cursor: url("https://github.com/muckrat-git/spacehey_theme/raw/refs/heads/main/hand_closed_edit.cur") 20 20, auto !important;
+}
+
+body {
+  background-image: url("https://amethyst-caron-34.tiiny.site/spacehey_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  image-rendering: pixelated;
+}
+
+/* Sections */
+.contact, .url-info, .table-section, .comments-table {
+  border: 2px solid var(--border2) !important;
+}
+
+.inner .section:last-child h4:first-child {
+  display: none;
+}
+
+.eye {
+  content: url("https://raw.githubusercontent.com/muckrat-git/spacehey_theme/refs/heads/main/eye.gif");
+  display: inline-block;
+  height: 1.3em;
+  vertical-align: bottom;
+}
+#lookat {
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+
+.lookbox {
+    display: inline-block;
+    flex: 1 1 0px;
+    flex-basis: 0;
+}
+
+#lookat a {
+  display: flex;
+  justify-content: center;
+}
+
+.lookbtn {
+  margin: 5px;
+  width: 200px; 
+  height: 48px;
+  background: url("https://i.pinimg.com/originals/4b/5d/a6/4b5da63844b3760bb5dcc9ef2e6fa402.gif");
+}
+
+.lookbtn img {
+  width: 200px; 
+  height: 48px;
+  opacity: 0.9;
+}
+
+#lookat a img:hover {
+  opacity: 1.0;
+  mix-blend-mode: multiply;
+  filter: brightness(200%);
+}
+
+#lookat p {
+  text-decoration: var(--text_main) underline;
+  font-size: 1em;
+  font-weight: 700;
+  text-align: center;
+}
+
+#babel {
+  margin: 48px;
+  padding: 0 16px 20px 16px;
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border: var(--border) solid 2px;
+  position: absolute;
+  top: 0;
+  text-align: center;
+  color: var(--text_main);
+  font-family: "Fira Code", monospace;
+  font-size: 1.1em;
+}
+
+details {
+  width: 128px;
+}
+
+summary {
+  width: 128px;
+  height: 128px;
+  list-style: none;
+}
+summary h1 {
+  font-size: 1.2em;
+  text-align: center;
+  padding-top: 38px;
+  padding-left: 5px;
+}
+summary::marker {
+  display: none;
+}
+summary img {
+  position:absolute;
+  transition: transform 0.3s;
+}
+summary:hover img:first-child {
+  transform: translateY(-20px);
+}
+summary:hover img:nth-child(2) {
+  transform: translateY(20px);
+}
+</style>
+
+<details>
+<summary>
+<img src="https://raw.githubusercontent.com/muckrat-git/spacehey_theme/refs/heads/main/jaw/jaw1.png"/>
+<img src="https://raw.githubusercontent.com/muckrat-git/spacehey_theme/refs/heads/main/jaw/jaw2.png"/>
+<h1>open<br/>thing</h1>
+</summary>
+
+<section id="babel">
+   ill put something here someday ¯\_(ツ)_/¯
+</section>
+
+</details>
